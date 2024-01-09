@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply print:text-sm print:leading-tight;
+	}
+	body {
+		@apply min-w-80 max-w-full overflow-y-scroll scroll-smooth;
+	}
+	a {
+		@apply underline hover:no-underline print:no-underline;
+	}
+	strong {
+		@apply font-semibold;
+	}
+}
+
+@layer components {
+	.container {
+		@apply mx-auto max-w-6xl px-4;
+	}
+}
