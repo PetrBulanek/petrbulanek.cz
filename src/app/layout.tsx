@@ -30,6 +30,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				<meta name="msapplication-TileColor" content="#bae6fd" />
 				<meta name="msapplication-config" content="/favicons/browserconfig.xml" />
 				<meta name="theme-color" content="#15803d" />
+
+				<meta name="robots" content="noindex, nofollow" />
 			</head>
 
 			<body className={noto_Sans.className}>{children}</body>
