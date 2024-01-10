@@ -21,12 +21,12 @@ export default function Zivotopis() {
 	return (
 		<>
 			<header className="bg-sky-200 py-8 print:bg-transparent print:py-0">
-				<Container className="grid items-center gap-x-8 gap-y-4 text-center print:gap-x-8 print:text-left md:grid-cols-[2fr,1fr] md:text-left lg:gap-x-16 lg:gap-y-8">
-					<div className="space-y-2 print:space-y-2 md:space-y-4">
-						<h1 className="text-3xl font-semibold tracking-wider text-green-700 print:text-4xl md:text-5xl">
+				<Container className="grid items-center gap-x-8 gap-y-4 text-center print:gap-x-8 print:text-left md:grid-cols-[2fr,1fr] md:text-left lg:gap-x-16 lg:gap-y-8 lg:print:gap-x-8 lg:print:gap-y-4">
+					<div className="space-y-2 print:space-y-2 md:space-y-4 md:print:space-y-2">
+						<h1 className="text-3xl font-semibold tracking-wider text-green-700 print:text-4xl md:text-5xl md:print:text-4xl">
 							Ing. Petr Bulánek
 						</h1>
-						<p className="text-xl font-semibold tracking-wider print:text-xl md:text-2xl">
+						<p className="text-xl font-semibold tracking-wider print:text-xl md:text-2xl md:print:text-xl">
 							Senior frontend vývojář
 						</p>
 					</div>
@@ -37,7 +37,7 @@ export default function Zivotopis() {
 						</figure>
 					</div>
 
-					<ul className="grid justify-center gap-2 print:grid-cols-2 print:justify-start print:gap-2 md:grid-cols-2 md:justify-start md:gap-4">
+					<ul className="grid justify-center gap-2 print:grid-cols-2 print:justify-start print:gap-2 md:grid-cols-2 md:justify-start md:gap-4 md:print:gap-2">
 						{[
 							{
 								Icon: PhoneIcon,
@@ -70,9 +70,9 @@ export default function Zivotopis() {
 			</Container>
 
 			<main>
-				<Container className="space-y-8 py-8 print:space-y-4 print:py-0 lg:space-y-16 lg:py-16">
+				<Container className="space-y-8 py-8 print:space-y-4 print:py-0 lg:space-y-16 lg:py-16 lg:print:space-y-4 lg:print:py-0">
 					<Section>
-						<div className="space-y-4 text-lg print:space-y-2 print:text-base">
+						<div className="space-y-4 text-lg print:space-y-2 print:text-base print:leading-[1.2]">
 							<p>
 								Jsem seniorní frontend vývojář s&nbsp;více než&nbsp;
 								<strong>desetiletou zkušeností s&nbsp;vývojem webů</strong>. Designy z&nbsp;Figmy
@@ -101,9 +101,9 @@ export default function Zivotopis() {
 						</div>
 					</Section>
 
-					<Divider className="print:block lg:hidden" />
+					<Divider className="lg:hidden lg:print:block" />
 
-					<div className="grid gap-x-8 gap-y-8 print:grid-cols-[2fr,1fr] print:gap-x-8 print:gap-y-4 md:grid-cols-[2fr,1fr] lg:gap-x-16">
+					<div className="grid gap-x-8 gap-y-8 print:grid-cols-[22fr,8fr] print:gap-x-8 print:gap-y-4 md:grid-cols-[2fr,1fr] md:print:grid-cols-[22fr,8fr] lg:gap-x-16 lg:print:gap-x-8">
 						<div className="space-y-8 print:space-y-4">
 							<Section>
 								<SectionHeading>Pracovní zkušenosti</SectionHeading>
@@ -118,9 +118,9 @@ export default function Zivotopis() {
 												<>
 													<li>
 														Kódování responzivních šablon pro&nbsp;středně velké
-														a&nbsp;velké projekty (webové aplikace, e-shopy, prezentační
-														weby) s&nbsp;důrazem na&nbsp;precizní výsledek, uživatelský
-														prožitek, přístupnost a&nbsp;rychlost načítání.
+														a&nbsp;velké projekty (webové aplikace, e&#8209;shopy,
+														prezentační weby) s&nbsp;důrazem na&nbsp;precizní výsledek,
+														uživatelský prožitek, přístupnost a&nbsp;rychlost načítání.
 													</li>
 													<li>
 														Tvorba design systémů a&nbsp;knihoven UI&nbsp;komponent
@@ -222,8 +222,8 @@ export default function Zivotopis() {
 													</li>
 													<li>Implementace komponent v&nbsp;Next.js aplikaci.</li>
 													<li>
-														Agilní vývoj, JIRA, scrum (dvoutýdenní sprinty), spolupráce s
-														&nbsp;několika React (Next.js) a&nbsp;backend (Symfony)
+														Agilní vývoj, JIRA, scrum (dvoutýdenní sprinty), spolupráce
+														s&nbsp;několika React (Next.js) a&nbsp;backend (Symfony)
 														vývojáři, přímá komunikace s&nbsp;klientem.
 													</li>
 												</>
@@ -276,8 +276,8 @@ export default function Zivotopis() {
 														(Drupal).
 													</li>
 													<li>
-														Části aplikace v&nbsp;Reactu - přehrávač živého vysílání, pořadů
-														a&nbsp;program.
+														Části aplikace v&nbsp;Reactu - program, přehrávač živého
+														vysílání a&nbsp;pořadů.
 													</li>
 												</>
 											),
@@ -459,7 +459,7 @@ export default function Zivotopis() {
 							<Section>
 								<SectionHeading>Dovednosti</SectionHeading>
 
-								<div className="grid gap-4 print:grid-cols-1 print:gap-2 lg:grid-cols-2">
+								<div className="grid gap-4 print:grid-cols-1 print:gap-2 lg:grid-cols-2 lg:print:grid-cols-1">
 									<div className="space-y-1">
 										<SectionSubheading>JavaScript</SectionSubheading>
 

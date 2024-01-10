@@ -4,7 +4,7 @@
 
 @layer base {
 	html {
-		@apply print:text-sm print:leading-tight;
+		@apply print:text-sm print:leading-[1.2];
 	}
 	body {
 		@apply min-w-80 max-w-full overflow-y-scroll scroll-smooth;

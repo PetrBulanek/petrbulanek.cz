@@ -5,8 +5,8 @@ import { HTMLAttributes } from 'react';
 const sectionSubheading = cva('font-semibold text-green-700', {
 	variants: {
 		size: {
-			sm: 'text-lg leading-snug',
-			md: 'text-xl print:text-lg',
+			sm: 'text-lg leading-snug print:leading-tight',
+			md: 'text-xl print:text-lg print:leading-tight',
 		},
 	},
 	defaultVariants: {
